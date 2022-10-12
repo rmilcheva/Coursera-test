@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 30px 0px 50px 0px;
+  font-size: 175%;
+}
+
+ body {
+  margin:  50px 0px 0px 20px; 
+} 
+
+section {
+  float: left;
+  padding-bottom: 20px;
+  padding-right: 20px; 
+}
+
+div {
+  position: relative;
+  float: left;
+  border: 1px solid black;
+  background-color: #f5f2df;
+  padding: 10px;
+}
+
+p.title {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  padding: 3px 30px 3px 30px;
+  border: 1px solid black;
+  border-top: none;
+  border-right: none;
+  font-weight: bold;
+  font-size: 125%;
+}
+
+#section1_Title {
+  background-color: #ffa500;
+}
+
+#section2_Title {
+  background-color: #e76d6d;
+}
+
+#section3_Title {
+  background-color: #83e181;
+}
+
+#section1_Text, #section2_Text, #section3_Text {
+  margin-top: 25px;
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 992px) {
+  #section1, #section2, #section3 {
+    width: 33.33%;
+  }
+}
+
+/********** Medium devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  #section1, #section2 {
+    width: 50%;
+  }
+  #section3 {
+    clear: both;
+   }
+}
+
+/********** Small devices only **********/
+@media (max-width: 767px) {
+  #section1, #section2, #section3 {
+    clear: both;
+  }
+}
